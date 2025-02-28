@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/space-surprise/static/css/main.e6c13ad2.css",
-    "main.js": "/space-surprise/static/js/main.195e8103.js",
+    "main.js": "/space-surprise/static/js/main.a6eb0734.js",
     "static/js/453.1f155cce.chunk.js": "/space-surprise/static/js/453.1f155cce.chunk.js",
     "static/media/Mars.svg": "/space-surprise/static/media/Mars.a549895c407c9cbe7901cc8695bc0af0.svg",
     "static/media/Ufo-1.svg": "/space-surprise/static/media/Ufo-1.5ab907d03e4852faf413704dde7e063e.svg",
@@ -21,11 +21,11 @@
     "static/media/Sun.svg": "/space-surprise/static/media/Sun.91e3253cd457622ae4f2dd0e6bea1539.svg",
     "index.html": "/space-surprise/index.html",
     "main.e6c13ad2.css.map": "/space-surprise/static/css/main.e6c13ad2.css.map",
-    "main.195e8103.js.map": "/space-surprise/static/js/main.195e8103.js.map",
+    "main.a6eb0734.js.map": "/space-surprise/static/js/main.a6eb0734.js.map",
     "453.1f155cce.chunk.js.map": "/space-surprise/static/js/453.1f155cce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.195e8103.js"
+    "static/js/main.a6eb0734.js"
   ]
 }
