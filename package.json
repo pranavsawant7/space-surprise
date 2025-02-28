@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "xcopy /E /Y /I build . && git add . && git commit -m \"Deploy React App\" && git push origin main"
   },
   "homepage": "https://pranavsawant7.github.io/space-surprise",
   "eslintConfig": {
@@ -42,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
