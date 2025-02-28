@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Box, Button } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { IconButton } from "@mui/material";
 
 import Asteroid1 from "./assets/planets/Asteroid-1.svg";
 import Asteroid2 from "./assets/planets/Asteroid-2.svg";
@@ -192,15 +194,15 @@ export default function App() {
       // Random size for the object (with different ranges based on object type)
       let size;
       if (svgObject.type === "asteroid") {
-        size = 15 + Math.random() * 15; // Smaller for asteroids
+        size = 15 + Math.random() * 15;
       } else if (svgObject.type === "stars") {
-        size = 20 + Math.random() * 30; // Medium for stars
+        size = 20 + Math.random() * 30;
       } else if (svgObject.type === "planet") {
-        size = 40 + Math.random() * 20; // Medium-large for planets
+        size = 40 + Math.random() * 20;
       } else if (svgObject.type === "sun") {
-        size = 60 + Math.random() * 30; // Larger for sun
+        size = 60 + Math.random() * 30;
       } else {
-        size = 30 + Math.random() * 20; // Default size
+        size = 30 + Math.random() * 20;
       }
 
       // Random animation properties
@@ -245,6 +247,29 @@ export default function App() {
         overflow: "hidden",
       }}
     >
+      <a
+        href="https://github.com/pranavsawant7/space-surprise"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "absolute",
+          top: 16,
+          left: 16,
+          zIndex: 10,
+          textDecoration: "none",
+        }}
+      >
+        <IconButton
+          sx={{
+            color: "white",
+            backgroundColor: "#333",
+            "&:hover": { backgroundColor: "#555" },
+          }}
+        >
+          <GitHubIcon fontSize="large" />
+        </IconButton>
+      </a>
+
       <canvas
         ref={canvasRef}
         style={{
